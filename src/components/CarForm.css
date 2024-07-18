@@ -1,32 +1,136 @@
-/* src/components/CarForm.css */
-.form-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
+/* CarForm.css */
+
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
   }
   
-  input, textarea {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
   }
   
   button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
+    margin-right: 10px;
+  }
+  .delete{
+    background-color: #d9534f;
+
+   
+
+  }
+  .edit{
+    margin-bottom: 5px;
+    
+
+  }
+  
+  button[type="button"] {
+    background-color: #d9534f;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #4cae4c;
   }
   
+  button[type="button"]:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  td button:first-child {
+    margin-right: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+      
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    form {
+      padding: 10px;
+    }
+  
+    label, input[type="text"], button {
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 8px 10px;
+    }
+  
+    td button {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }

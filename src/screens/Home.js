@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import SearchBar from '../components/SearchBar';
 import './Home.css';
-
+import Car from '../images/car.png'
 const Home = () => {
   const [filteredCars, setFilteredCars] = useState([]);
   const [selectedCar, setSelectedCar] = useState(null);
@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <img src="/images/car.png" alt="Car" className="car-image" />
+      <img src={Car} alt="Car" className="car-image" />
       <h1>Car Repair Search</h1>
       <Link to="/add">
         <button className="add-button">Add/Edit Car</button>
